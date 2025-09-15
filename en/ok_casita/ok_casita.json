@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "model_name": "ok_casita",
+  "wake_word": "Ok Casita Assist",
+  "authors": ["Jokerigno"],
+  "language": "it",
+  "description": "Wake word model for Home Assistant voice assistant",
+  "sampling_rate": 16000,
+  "num_features": 10,
+  "num_samples": 1280,
+  "model": {
+    "type": "streaming",
+    "url": "https://github.com/home-assistant-wakewords-collection/en/ok_casita/ok_casita.tflite",
+    "probability_cutoff": 0.5,
+    "sliding_window_size": 10
+  },
+  "preprocessing": {
+    "average_window_duration_ms": 100,
+    "feature_step_size": 20,
+    "tensor_arena_size": 8192
+  },
+  "metadata": {
+    "created_date": "2024-09-15",
+    "training_framework": "microWakeWord",
+    "compatible_devices": ["ESP32", "ESP32-S3"],
+    "min_esphome_version": "2024.7.0"
+  }
+}
