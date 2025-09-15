@@ -10,7 +10,7 @@
   "num_samples": 1280,
   "model": {
     "type": "streaming",
-    "url": "https://github.com/home-assistant-wakewords-collection/en/ok_casita/ok_casita.tflite",
+    "url": "https://github.com/jokerigno/home-assistant-wakewords-collection/en/ok_casita/ok_casita.tflite",
     "probability_cutoff": 0.5,
     "sliding_window_size": 10
   },
